@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aplikasi Absensi Online Untuk Karyawan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <style>
+ 
+      .banner{
+          height: 90vh;
+          background-color: skyblue;
+          background-size: cover;
+          background-image: url('img/bannerr.JPG');
+          background-position: center;
+      }
+      .fitur{
+        background-image: linear-gradient(to right, rgba(55, 210, 248, 0), rgb(31, 62, 238));
+          height: 100vh;
+      }
+      .harga{
+          height: 30vh;
+      }
+      .tanya{
+          height: 50vh;
+          justify-content: center;
+      }
+      .tanya .card-form{
+          margin: 50px;
+      }
+      .harga h3{
+          color: black;
+          text-align: center;
+      }
+      .card{
+          margin: 50px;
+      }
+      .harga h2:hover{
+          color: blue;
+      }
+      .content{
+          height: 100%;
+          /* border: solid; */
+          color: white;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+      }
+      .text-center{
+          background-color: gray;
+
+      }
+    .text-center:hover{
+          color: rgb(226, 82, 137);
+          background-color: white;
+      }
+      button{
+        outline: none;
+        border-radius: 20px;
+        padding: 24px;
+        box-shadow: 2px;
+        border: none;
+        font-size: 1.2rem;
+        position: relative;
+    }
+    #fitur{
+        color: black;
+    }
+    .fitur h2{
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .fitur h2:hover{
+        color: black;
+    }
+    form{
+        justify-items: center;
+    }
+    form a{
+      border: none;
+    }
+    footer{
+      background-color: rgb(31, 62, 238);
+    }
+    nav{
+      position: fixed;
+    }
+  </style>
+  <body>
+  <!--nav-->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" data-aos="fade-down" data-aos-duration="30000" >
+        <div class="container-fluid" data-aos="fade-right" >
+          <a class="navbar-brand" href="#home">Kerjoo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fitur">Fitur</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#harga">Harga</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search"  data-aos="fade-right" data-aos-delay="200">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!-- endnav -->
+<!-- home -->
+      <div class="container-fluid banner" id="home"  data-aos-duration="20000" data-aos-delay="1000">
+            <div class="container content col-lg-6">
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="1000">
+                    <div class="fs-1">
+                        <h1>Welcome to Kerjoo</h1>
+                        <h5>Aplikasi Absensi Online Untuk Karyawan</h5>
+                    </div>
+                    <p  class="d-none d-md-block">
+                        Aplikasi Kerjoo, digunakan untuk mempermudah absensi dari perusahaan
+                        seluruh dunia, kita bisa melakukan absensi berangkat,jam istirahat dan pulang.
+                        Solusi Absensi Digital Terbaik, tinggalkan absensi manual anda!
+                        1Kerjoo: Mudah , Digital , User Friendly
+                    </p>
+                    <button type="button" class="btn btn-primary">Daftar Gratis</button>
+                    <br>
+                    <br>
+                </div>
+            
+            </div>
+      </div>
+      <!-- endhome -->
+      <!-- fitur -->
+      <div class="fitur" id="fitur"  data-aos="zoom-in-down" data-aos-duration="20000" data-aos-delay="50000">
+            <h2  data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">FITUR </h2>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-right"  data-aos-duration="20000" data-aos-delay="30000">
+                    <h3 >Kemudahan Absensi</h3>
+                    <p>Kerjoo menyediakan aplikasi yang bisa diinstal di handphone (iOS atau Android) milik karyawan sehingga memudahkan absensi dari manapun dan kapanpun. Cara ini lebih higienis tanpa harus mengantri absen di mesin fingerprint yang digunakan secara bergantian.</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4"  data-aos="zoom-in-up"  data-aos-duration="30000" data-aos-delay="40000">
+                    <h3 >Monitor Kehadiran</h3>
+                    <p>Dengan fitur Geotagging maka lokasi karyawan saat melakukan absensi akan terekam secara otomatis. Aplikasi Kerjoo juga sudah bisa mendeteksi bila di HP karyawan juga menggunakan aplikasi pemalsuan lokasi seperti Lockito, Fake GPS, Fake GPS Location, GPS Emulator, FakeGPS, Location Changer, Fake Live Location, sehingga kecurangan pemalsuan lokasi oleh karyawan bisa dihindari</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-left" data-aos-duration="20000" data-aos-delay="30000">
+                    <h3>Face Recognition dan Identification</h3>
+                    <p>Absensi dilakukan oleh karyawan secara selfie dari aplikasi absensi pada handphone mereka. Hal ini bisa membantu perusahaan untuk memastikan bahwa absensi dilakukan hanya oleh karyawan yang bersangkutan </p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4"data-aos="fade-right" data-aos-duration="20000" data-aos-delay="30000">
+                    <h3>Menghemat Waktu Review Kedisiplinan Karyawan
+                    </h3>
+                    <p>Dengan adanya fitur statistik, ekspor file, dan ringkasan kehadiran, maka perusahaan bisa melakukan review kedisiplinan karyawan secara cepat dengan melihat data per hari, per bulan, maupun per karyawan. Perusahaan Anda tidak perlu bersusah payah mengumpulkan data dan file secara manual karena semua sudah tersedia di dasbor admin aplikasi Kerjoo. </p>
+               
+            </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(31, 62, 238)" fill-opacity="1" d="M0,288L18.5,288C36.9,288,74,288,111,256C147.7,224,185,160,222,133.3C258.5,107,295,117,332,112C369.2,107,406,85,443,90.7C480,96,517,128,554,133.3C590.8,139,628,117,665,112C701.5,107,738,117,775,122.7C812.3,128,849,128,886,106.7C923.1,85,960,43,997,26.7C1033.8,11,1071,21,1108,69.3C1144.6,117,1182,203,1218,197.3C1255.4,192,1292,96,1329,69.3C1366.2,43,1403,85,1422,106.7L1440,128L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z" data-aos="fade-down"></path></svg>
+      <div class="harga" id="harga" data-aos="zoom-in-down" data-aos-duration="20000" data-aos-delay="50000">
+        <h3 data-aos="fade-down">Harga</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Advance</h5>
+                      <p class="card-text">Rp
+                        5999/bulan</p>
+                        <p style="color: orange;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                      <a href="#" class="btn btn-primary">Coba Gratis 14 Hari</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Basic</h5>
+                      <p class="card-text">Rp
+                        6999/bulan</p>
+                        <p style="color: orange;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </p>
+                      <a href="#" class="btn btn-primary">Coba Gratis 14 Hari</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Pro</h5>
+                      <p class="card-text">Rp
+                        64999/bulan</p>
+                        <p style="color: orange;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                      <a href="#" class="btn btn-primary">Coba Gratis 14 Hari</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Gratis</h5>
+                      <p class="card-text">Rp 0</p>
+                      <p style="color: orange;">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </p>
+                      <a href="#" class="btn btn-primary">Coba Gratis 14 Hari</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path  fill="rgb(31, 62, 238)" fill-opacity="1" d="M0,288L480,160L960,288L1440,64L1440,320L960,320L480,320L0,320Z"></path></svg>
+
+      <footer class="footer text-white pt-5 pb-4"  data-aos="fade-left"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="500"
+      data-aos-duration="500">
+        <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left">
+              <!-- <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              </div> -->
+          </div>
+        </div>
+
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
